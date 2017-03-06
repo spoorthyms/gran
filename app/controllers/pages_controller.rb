@@ -21,6 +21,7 @@ end
   end
 
   def shop
+    render 'shop'
   end
 
 end
