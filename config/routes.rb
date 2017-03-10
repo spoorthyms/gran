@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :products
+  resources :products do
+  	collection do
+  		get 'search'
+  	end
  resources :pages
  root "pages#index"
  get 'pages/contact'
