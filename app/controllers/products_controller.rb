@@ -2,10 +2,10 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
 def search
-if params [:search].present?
-  @products =Product.search(params[:search])
+if params[:search].present?
+  @products = Product.search(params[:search])
 else 
-  @products =Product.all
+  @products = Product.all
 end
 end
   # GET /products

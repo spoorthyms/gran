@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   	collection do
   		get 'search'
   	end
+  end
  resources :pages
  root "pages#index"
  get 'pages/contact'
